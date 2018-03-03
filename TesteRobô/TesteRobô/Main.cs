@@ -48,18 +48,7 @@ namespace RobotTest
                         }else
                         {
                             description = result.Children[1].Children[1].InnerText.Trim();
-                        }          
-
-                        //if ()
-                        //{
-
-                        //    description = result.Children[2].InnerText.Trim();
-
-                        //}
-                        //else
-                        //{
-                        //    description = result.Children[1].Children[1].InnerText.Trim();
-                        //}
+                        }                           
 
                         var newSearchResult = new SearchResult
                         {
