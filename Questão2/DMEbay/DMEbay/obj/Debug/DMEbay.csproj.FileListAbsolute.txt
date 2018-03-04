@@ -1,0 +1,13 @@
+C:\Users\Fernando\Documents\Visual Studio 2017\Projects\DMEbay\DMEbay\bin\Debug\DMEbay.exe.config
+C:\Users\Fernando\Documents\Visual Studio 2017\Projects\DMEbay\DMEbay\bin\Debug\DMEbay.exe
+C:\Users\Fernando\Documents\Visual Studio 2017\Projects\DMEbay\DMEbay\bin\Debug\DMEbay.pdb
+C:\Users\Fernando\Documents\Visual Studio 2017\Projects\DMEbay\DMEbay\obj\Debug\DMEbay.csprojResolveAssemblyReference.cache
+C:\Users\Fernando\Documents\Visual Studio 2017\Projects\DMEbay\DMEbay\obj\Debug\DMEbay.Form1.resources
+C:\Users\Fernando\Documents\Visual Studio 2017\Projects\DMEbay\DMEbay\obj\Debug\DMEbay.Properties.Resources.resources
+C:\Users\Fernando\Documents\Visual Studio 2017\Projects\DMEbay\DMEbay\obj\Debug\DMEbay.csproj.GenerateResource.Cache
+C:\Users\Fernando\Documents\Visual Studio 2017\Projects\DMEbay\DMEbay\obj\Debug\DMEbay.csproj.CoreCompileInputs.cache
+C:\Users\Fernando\Documents\Visual Studio 2017\Projects\DMEbay\DMEbay\obj\Debug\DMEbay.exe
+C:\Users\Fernando\Documents\Visual Studio 2017\Projects\DMEbay\DMEbay\obj\Debug\DMEbay.pdb
+C:\Users\Fernando\Documents\Visual Studio 2017\Projects\DMEbay\DMEbay\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Fernando\Documents\Visual Studio 2017\Projects\DMEbay\DMEbay\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Fernando\Documents\Visual Studio 2017\Projects\DMEbay\DMEbay\bin\Debug\HtmlAgilityPack.xml
