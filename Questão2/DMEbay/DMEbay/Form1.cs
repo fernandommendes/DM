@@ -44,21 +44,16 @@ namespace DMEbay
 
             for (int i = 0; i < 3; i++)
             {
-                var idProduto = produtoListaItem[i].GetAttributeValue("iid", "");
+                var idProduto = produtoListaItem[i].GetAttributeValue("listingid","");//("iid", "");
 
-                url = "https://cart.payments.ebay.com/sc/add?item=iid:322946784974,qty:1&srt=01000200000050e5c4b12fd67545beef286954514106d90ee70a82520b3e15ba72b1840426261a5bd215c0f03fd7475bc2bf8fea948c42f2e0509a9bef38d1d3da90dcfdc88ad48835de2b8a1549cd12397282156804a5&ssPageName=CART:ATC";
+                url = "https://cart.payments.ebay.com/sc/add?item=iid:"+ idProduto + ",qty:1&srt=01000200000050e5c4b12fd67545beef286954514106d90ee70a82520b3e15ba72b1840426261a5bd215c0f03fd7475bc2bf8fea948c42f2e0509a9bef38d1d3da90dcfdc88ad48835de2b8a1549cd12397282156804a5&ssPageName=CART:ATC";
 
                 httpClient = new HttpClient();
                 html = await httpClient.GetStringAsync(url);
             }
 
-            //AddCart(produtoListaItem);
+            //textbox1.Text = "Compra feita!";
 
-        }
-
-        private static async void AddCart( List<HtmlNode> Produtos)
-        {
-            
         }
 
     }
