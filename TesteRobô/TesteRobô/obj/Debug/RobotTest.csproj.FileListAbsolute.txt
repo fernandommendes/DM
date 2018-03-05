@@ -16,3 +16,12 @@ C:\Users\Fernando\Desktop\Questão 1 TesteRobô\TesteRobô\TesteRobô\obj\Debug\
 C:\Users\Fernando\Desktop\Questão 1 TesteRobô\TesteRobô\TesteRobô\obj\Debug\RobotTest.csproj.CoreCompileInputs.cache
 C:\Users\Fernando\Desktop\Questão 1 TesteRobô\TesteRobô\TesteRobô\obj\Debug\TesteRobô.exe
 C:\Users\Fernando\Desktop\Questão 1 TesteRobô\TesteRobô\TesteRobô\obj\Debug\TesteRobô.pdb
+C:\Users\Fernando\Documents\GitHub\Teste DM\TesteRobô\TesteRobô\bin\Debug\TesteRobô.exe.config
+C:\Users\Fernando\Documents\GitHub\Teste DM\TesteRobô\TesteRobô\bin\Debug\TesteRobô.exe
+C:\Users\Fernando\Documents\GitHub\Teste DM\TesteRobô\TesteRobô\bin\Debug\TesteRobô.pdb
+C:\Users\Fernando\Documents\GitHub\Teste DM\TesteRobô\TesteRobô\obj\Debug\RobotTest.csprojResolveAssemblyReference.cache
+C:\Users\Fernando\Documents\GitHub\Teste DM\TesteRobô\TesteRobô\obj\Debug\RobotTest.TestForm.resources
+C:\Users\Fernando\Documents\GitHub\Teste DM\TesteRobô\TesteRobô\obj\Debug\TesteRobô.Properties.Resources.resources
+C:\Users\Fernando\Documents\GitHub\Teste DM\TesteRobô\TesteRobô\obj\Debug\RobotTest.csproj.GenerateResource.Cache
+C:\Users\Fernando\Documents\GitHub\Teste DM\TesteRobô\TesteRobô\obj\Debug\TesteRobô.exe
+C:\Users\Fernando\Documents\GitHub\Teste DM\TesteRobô\TesteRobô\obj\Debug\TesteRobô.pdb

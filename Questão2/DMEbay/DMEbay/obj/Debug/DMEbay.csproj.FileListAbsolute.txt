@@ -17,7 +17,6 @@ C:\Users\Fernando\Documents\GitHub\Teste DM\Questão2\DMEbay\DMEbay\bin\Debug\DM
 C:\Users\Fernando\Documents\GitHub\Teste DM\Questão2\DMEbay\DMEbay\bin\Debug\HtmlAgilityPack.dll
 C:\Users\Fernando\Documents\GitHub\Teste DM\Questão2\DMEbay\DMEbay\bin\Debug\HtmlAgilityPack.pdb
 C:\Users\Fernando\Documents\GitHub\Teste DM\Questão2\DMEbay\DMEbay\bin\Debug\HtmlAgilityPack.xml
-C:\Users\Fernando\Documents\GitHub\Teste DM\Questão2\DMEbay\DMEbay\obj\Debug\DMEbay.csprojResolveAssemblyReference.cache
 C:\Users\Fernando\Documents\GitHub\Teste DM\Questão2\DMEbay\DMEbay\obj\Debug\DMEbay.Form1.resources
 C:\Users\Fernando\Documents\GitHub\Teste DM\Questão2\DMEbay\DMEbay\obj\Debug\DMEbay.Properties.Resources.resources
 C:\Users\Fernando\Documents\GitHub\Teste DM\Questão2\DMEbay\DMEbay\obj\Debug\DMEbay.csproj.GenerateResource.Cache

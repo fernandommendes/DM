@@ -29,10 +29,10 @@ namespace DMEbay
         {
             string produto = "robot";
 
-            var url = "https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2050601.m570.l1313.TR0.TRC0.H0.Xrobot.TRS0&_nkw=" + produto + "&_sacat=0";
+            string url = "https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2050601.m570.l1313.TR0.TRC0.H0.Xrobot.TRS0&_nkw=" + produto + "&_sacat=0";
 
             var httpClient = new HttpClient();
-            var html = await httpClient.GetStringAsync(url);
+            string html = await httpClient.GetStringAsync(url);
 
             var htmlDocument = new HtmlAgilityPack.HtmlDocument();
             htmlDocument.LoadHtml(html);
@@ -47,14 +47,14 @@ namespace DMEbay
             for (int i = 0; i < 3; i++)
             {
                 //Entrando na página do produto
-                var tagAProduto = produtoListaItem[i].Descendants("a").First().Attributes.First().Value;
+                string tagAProduto = produtoListaItem[i].Descendants("a").First().Attributes.First().Value;
 
                 string htmlProduct = await httpClient.GetStringAsync(tagAProduto);
                 var htmlDocumentProduct = new HtmlAgilityPack.HtmlDocument();
                 htmlDocumentProduct.LoadHtml(htmlProduct);
 
                 //Adicionando produto ao carrinho
-                var urlAddCart = htmlDocumentProduct.GetElementbyId("isCartBtn_btn").Attributes[5].Value;
+                string urlAddCart = htmlDocumentProduct.GetElementbyId("isCartBtn_btn").Attributes[5].Value;
 
                 htmlCart = await httpClient.GetStringAsync(urlAddCart);
                 htmlDocumentCart.LoadHtml(htmlCart);

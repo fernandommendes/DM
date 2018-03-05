@@ -36,27 +36,24 @@ namespace RobotTest
                 {
                     if (result.OuterHtml.Contains("b_algo"))
                     {
-                        int qntElementos = result.Children.Count;
 
-                        var title = result.Children[0].InnerText.Trim();
-                        var url = result.Children[1].Children[0].InnerText.Trim();
-                        var description = "";
+                        string title = result.Children[0].InnerText.Trim();                                               
 
-                        if (qntElementos > 2)
+                        if(title.Trim().Equals("DM Sistemas | DM Sistemas"))
                         {
-                            description = result.Children[2].InnerText.Trim();
-                        }else
-                        {
-                            description = result.Children[1].Children[1].InnerText.Trim();
-                        }                           
 
-                        var newSearchResult = new SearchResult
-                        {
-                            Title = title,
-                            Url = url,
-                            Description = description
-                        };
-                        SearchResultsData.Add(newSearchResult);
+                            string url = result.Children[1].Children[0].InnerText.Trim();
+                            string description = result.Children[1].Children[1].InnerText.Trim();
+                            var newSearchResult = new SearchResult
+                            {
+                                Title = title,
+                                Url = url,
+                                Description = description
+                            };
+                            SearchResultsData.Add(newSearchResult);
+
+                            break;
+                        }
 
                     }
                 }
@@ -84,6 +81,11 @@ namespace RobotTest
 
             Process.Start("notepad.exe", Application.StartupPath + "\\SearchResults.csv");
             Close();
+        }
+
+        private void TestForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
