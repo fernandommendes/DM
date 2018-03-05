@@ -11,7 +11,6 @@ using System.Xml;
 using HtmlAgilityPack;
 using System.Net;
 using System.Net.Http;
-
 namespace DMEbay
 {
     public partial class Form1 : Form
@@ -42,19 +41,37 @@ namespace DMEbay
 
             var produtoListaItem = ProdutosHtml[0].Descendants("li").Where(node => node.GetAttributeValue("id", "").Contains("item")).ToList();
 
+            string htmlCart;
+            var htmlDocumentCart = new HtmlAgilityPack.HtmlDocument();
+
             for (int i = 0; i < 3; i++)
             {
-                var idProduto = produtoListaItem[i].GetAttributeValue("listingid","");//("iid", "");
+                //Entrando na página do produto
+                var tagAProduto = produtoListaItem[i].Descendants("a").First().Attributes.First().Value;
 
-                url = "https://cart.payments.ebay.com/sc/add?item=iid:"+ idProduto + ",qty:1&srt=01000200000050e5c4b12fd67545beef286954514106d90ee70a82520b3e15ba72b1840426261a5bd215c0f03fd7475bc2bf8fea948c42f2e0509a9bef38d1d3da90dcfdc88ad48835de2b8a1549cd12397282156804a5&ssPageName=CART:ATC";
+                string htmlProduct = await httpClient.GetStringAsync(tagAProduto);
+                var htmlDocumentProduct = new HtmlAgilityPack.HtmlDocument();
+                htmlDocumentProduct.LoadHtml(htmlProduct);
 
-                httpClient = new HttpClient();
-                html = await httpClient.GetStringAsync(url);
+                //Adicionando produto ao carrinho
+                var urlAddCart = htmlDocumentProduct.GetElementbyId("isCartBtn_btn").Attributes[5].Value;
+
+                htmlCart = await httpClient.GetStringAsync(urlAddCart);
+                htmlDocumentCart.LoadHtml(htmlCart);
+
             }
 
-            //textbox1.Text = "Compra feita!";
+            //Finalizar a compra
+            string urlFinalizarCompra = "https://cart.payments.ebay.com/sc/";
+            urlFinalizarCompra += htmlDocumentCart.GetElementbyId("ptcBtnRight").Attributes[2].Value;
+            
+            string htmlFinalizarCompra = await httpClient.GetStringAsync(urlFinalizarCompra);
+            var htmlDocumentFinalizarCompra = new HtmlAgilityPack.HtmlDocument();
+            htmlDocumentFinalizarCompra.LoadHtml(htmlFinalizarCompra);
 
+            //Form1 frm1 = new Form1();
+            //frm1.lblRetorno.Text = "Compra realizada com sucesso!";
+            MessageBox.Show("Compra realizada com sucesso!");
         }
-
     }
 }
